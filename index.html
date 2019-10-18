@@ -165,6 +165,262 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-关于pynlpir-open-证书过期解决方法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/18/关于pynlpir-open-证书过期解决方法/">关于pynlpir.open()证书过期解决方法</a>
+    </h1>
+  
+
+        
+        <a href="/2019/10/18/关于pynlpir-open-证书过期解决方法/" class="archive-article-date">
+  	<time datetime="2019-10-18T13:45:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-18</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="pynlpir-open-出现如下错误"><a href="#pynlpir-open-出现如下错误" class="headerlink" title="pynlpir.open() 出现如下错误:"></a>pynlpir.open() 出现如下错误:</h1><p><img src="/2019/10/18/关于pynlpir-open-证书过期解决方法/1.png" alt><br><img src="/2019/10/18/关于pynlpir-open-证书过期解决方法/2.png" alt></p>
+<h2 id="错误类型"><a href="#错误类型" class="headerlink" title="错误类型:"></a>错误类型:</h2><pre><code>RuntimeError: NLPIR function &apos;NLPIR_Init&apos; failed.</code></pre><h1 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法:"></a>解决方法:</h1><pre><code>1.下载NLPIR.user  路径为  https://github.com/NLPIR-team/NLPIR/blob/master/License/license%20for%20a%20month/NLPIR-ICTCLAS%E5%88%86%E8%AF%8D%E7%B3%BB%E7%BB%9F%E6%8E%88%E6%9D%83/NLPIR.user
+2. 找到Anaconda安装路径下的Lib\site-packages\pynlpir\Data复制刚才下载的NLPIR.user替换目标路径中的NLPIR.user即可</code></pre>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">pynlpir包</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">LicenseError</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/18/关于pynlpir-open-证书过期解决方法/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-c-笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/06/c-笔记/">c++视频笔记</a>
+    </h1>
+  
+
+        
+        <a href="/2019/10/06/c-笔记/" class="archive-article-date">
+  	<time datetime="2019-10-06T08:34:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-06</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="第3章-函数"><a href="#第3章-函数" class="headerlink" title="第3章 函数"></a>第3章 函数</h1><h2 id="2-嵌套与递归"><a href="#2-嵌套与递归" class="headerlink" title="2.嵌套与递归"></a>2.嵌套与递归</h2><h3 id="嵌套"><a href="#嵌套" class="headerlink" title="嵌套"></a>嵌套</h3><pre><code> 在一个函数中，可能要调用另一个函数，被调用的函数又去调用别的函数。
+不会出错，用栈保存了当前现场和返回地址。</code></pre><h3 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h3><pre><code>函数直接或间接调用自己。</code></pre><p>计算n的阶乘<br>unsigned fac(unsigned n){<br>    unsigned f;<br>    if(n == 0)<br>        f = 1;<br>    else<br>        f = fac(n-1) * n;<br>    return f;<br>}<br>例题:重n个人里选k个人<br>公式:</p>
+<h2 id="3-引用类型"><a href="#3-引用类型" class="headerlink" title="3.引用类型"></a>3.引用类型</h2><p>应用(&amp;)是标识符的别名<br>定义一个引用时，必须同时对它进行初始化，使它指向同一个已存在的对象<br>例如:<br>    int i,j;<br>    int &amp;ri = i;  //定义int引用ri，并初始化为变量i的引用<br>    j = 10;<br>    ri = j; //相等于 i = j</p>
+<h2 id="4-含有可变参的函数"><a href="#4-含有可变参的函数" class="headerlink" title="4.含有可变参的函数"></a>4.含有可变参的函数</h2><h2 id="5-内联函数"><a href="#5-内联函数" class="headerlink" title="5.内联函数"></a>5.内联函数</h2><p>调用提高效率<br>声明时使用关键字 inline。<br> 编译时在调用处用函数体进行替换，节省了参数传递、控制转移等开销。<br> 注意：  内联函数体内不能有循环语句和switch语句； </p>
+<h2 id="6-constexpr函数"><a href="#6-constexpr函数" class="headerlink" title="6.constexpr函数"></a>6.constexpr函数</h2><h2 id="7-带默认参数值的函数"><a href="#7-带默认参数值的函数" class="headerlink" title="7.带默认参数值的函数"></a>7.带默认参数值的函数</h2><h2 id="8-函数重载"><a href="#8-函数重载" class="headerlink" title="8.函数重载"></a>8.函数重载</h2><h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><pre><code>C++允许功能相近的函数在相同的作用域内以相同函数名声明，从而形成重载。方便 使用，便于记忆</code></pre><h3 id="例"><a href="#例" class="headerlink" title="例"></a>例</h3><pre><code>形参类型不同
+int add(int x, int y);
+int add(float x, float y);
+形参个数不同
+int add(int x, int y);
+int add(int x, int y, int z);</code></pre><h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><pre><code>1.重载函数的形参必须不同，个数不同或类型不同。
+2.编译程序将根据实参和形参的类型及个数的最佳匹配来选择调用哪一个函数。
+3.不要将不同功能的函数为重载函数，以免出现调用结果的误解、混淆。这样不好</code></pre><h2 id="9-c-系统函数"><a href="#9-c-系统函数" class="headerlink" title="9.c++系统函数"></a>9.c++系统函数</h2><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><pre><code>函数的定义与调用，参数传递，
+内涵函数、带默认参数值的函数，函数重载
+c++系统函数</code></pre>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">c++</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">视频笔记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/06/c-笔记/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-python" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/05/python/">python</a>
+    </h1>
+  
+
+        
+        <a href="/2019/10/05/python/" class="archive-article-date">
+  	<time datetime="2019-10-05T11:08:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-05</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="DataFrame"><a href="#DataFrame" class="headerlink" title="DataFrame"></a>DataFrame</h2><p>(3) 更改显示index方法:用reindex()方法<br><code>更改显示index的含义：并不是指重新给出新index，而是调整index顺序</code></p>
+<h1 id="和密度估计"><a href="#和密度估计" class="headerlink" title="和密度估计"></a>和密度估计</h1><p>kernel density estimation是在概率论中用来估计未知的密度函数，属于非参数检验方法之一</p>
+<h1 id="np-random-randn-d0-d1-d2……dn"><a href="#np-random-randn-d0-d1-d2……dn" class="headerlink" title="np.random.randn(d0,d1,d2……dn)"></a>np.random.randn(d0,d1,d2……dn)</h1><p>1)当函数括号内没有参数时，则返回一个浮点数；<br>2）当函数括号内有一个参数时，则返回秩为1的数组，不能表示向量和矩阵；<br>3）当函数括号内有两个及以上参数时，则返回对应维度的数组，能表示向量或矩阵；<br>4）np.random.standard_normal（）函数与np.random.randn()类似，但是np.random.standard_normal（）的输入参数为元组（tuple）.<br>5)np.random.randn()的输入通常为整数，但是如果为浮点数，则会自动直接截断转换为整数。<br>在神经网络构建中，权重参数W通常采用该函数进行初始化，当然需要注意的是，通常会在生成的矩阵后面乘以小数，比如0.01，目的是为了提高梯度下降算法的收敛速度。<br>W = np.random.randn(2,2)*0.01</p>
+<h1 id="np-random-rand-函数"><a href="#np-random-rand-函数" class="headerlink" title="np.random.rand()函数"></a>np.random.rand()函数</h1><p>np.random.rand(d0,d1,d2……dn)<br>注：使用方法与np.random.randn()函数相同<br>作用：<br>通过本函数可以返回一个或一组服从“0~1”均匀分布的随机样本值。随机样本取值范围是[0,1)，不包括1。<br>应用：在深度学习的Dropout正则化方法中，可以用于生成dropout随机向量（dl），例如（keep_prob表示保留神经元的比例）：dl = np.random.rand(al.shape[0],al.shape[1]) &lt; keep_prob</p>
+<h1 id="np-random-randint-函数"><a href="#np-random-randint-函数" class="headerlink" title="np.random.randint()函数"></a>np.random.randint()函数</h1><p>语法：<br>numpy.random.randint(low, high=None, size=None, dtype=’l’)<br>输入：<br>low—–为最小值<br>high—-为最大值<br>size—–为数组维度大小<br>dtype—为数据类型，默认的数据类型是np.int。<br>返回值：<br>返回随机整数或整型数组，范围区间为[low,high），包含low，不包含high；<br>high没有填写时，默认生成随机数的范围是[0，low）</p>
+<h1 id="cumsum函数定义："><a href="#cumsum函数定义：" class="headerlink" title="cumsum函数定义："></a>cumsum函数定义：</h1><p>cumsum(a, axis=None, dtype=None, out=None)<br>a.cumsum(axis=None, dtype=None, out=None)<br>  返回：沿着指定轴的元素累加和所组成的数组，其形状应与输入数组a一致<br>其中cumsum函数的参数：<br>a:数组<br>axis:轴索引,整型，若a为n维数组，则axis的取值范围为[0,n-1]<br>dtype:返回结果的数据类型，若不指定，则默认与a一致。<br>out：数据类型为数组。用来放置结果的替代输出数组，它必须具有与输出结果具有相同的形状和缓冲长度</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">知识点</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/05/python/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-初次学习c-代码，其中的" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -172,7 +428,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/28/初次学习c-代码，其中的/">初次学习c++代码，其中的</a>
+      <a class="article-title" href="/2019/09/28/初次学习c-代码，其中的/">c++相关关键字</a>
     </h1>
   
 
@@ -399,11 +655,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="句子"><a href="#句子" class="headerlink" title="句子"></a>句子</h1><p>There is no longer any real question that…<br>毫无疑问…<br>Some of us get dipped in flat,some in satin(绸缎),some in gloss,But every once in a while you find someone who’s iridescent(彩虹色的),and when you do,nothing willever compare.<br>有人住高楼，有人出深沟，有人光万丈，有人一身锈，世人千万种，浮云莫去求，斯人若彩虹，遇上方知<br>有。<br>——&lt;&lt;怦然心动&gt;&gt;</p>
+        <h1 id="句子"><a href="#句子" class="headerlink" title="句子"></a>句子</h1><p>1.There is no longer any real question that…<br>毫无疑问…<br>2.Some of us get dipped in flat,some in satin(绸缎),some in gloss,But every once in a while you find someone who’s iridescent(彩虹色的),and when you do,nothing willever compare.<br>有人住高楼，有人出深沟，有人光万丈，有人一身锈，世人千万种，浮云莫去求，斯人若彩虹，遇上方知<br>有。<br>——&lt;&lt;怦然心动&gt;&gt;<br>3.A man is not old as long as he is seeking something.A man is not old unti regrets take the place of dreams.(J.Barrymore)<br>只要一个人还有追求，他就没有老。知道后悔取代了梦想，一个人才算老。<br>                                            (巴里摩尔)<br>4.Experience is not interesting till it begins to repeat itself,in face till it does that ,it hardly is experience<br>    经验直到自我重复是才变得有意义，事实上，直到那时才算得上经验。</p>
 <h1 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1.believe的程度要比think更深；</span><br><span class="line">2.show的确定性比suggest更强。</span><br><span class="line">3.It is not important to do… = It doesn&apos;t matter if ...  or not</span><br><span class="line">4.It is important not to do… = Don&apos;t do…</span><br></pre></td></tr></table></figure>
 
-
-<p><img src="/2019/09/22/英语笔记/1.jpg" alt></p>
+<h1 id="短语"><a href="#短语" class="headerlink" title="短语"></a>短语</h1><p>1.up close 近距离<br>2.To summarize the main points 总结要点<br>3.To sum up 总而言之<br>4.not to mention 更不用说</p>
 
       
 
@@ -659,7 +914,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2019-09-29 Wang Jun
+    		&copy; 2019-10-18 Wang Jun
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -757,11 +1012,31 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">语法</a>
+                <a href="javascript:void(0)" class="js-tag color5">视频笔记</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">python</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">知识点</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">pynlpir包</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">LicenseError</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">英语笔记</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">语法</a>
               </li>
             
             <div class="clearfix"></div>

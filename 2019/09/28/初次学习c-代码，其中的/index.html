@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>初次学习c++代码，其中的 | 个人博客</title>
+  <title>c++相关关键字 | 个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="1.c++中的pointThe Point class represents a location in a two-dimensional (x, y) coordinate space.就是一个点坐标（X,Y）">
 <meta name="keywords" content="c++,语法">
 <meta property="og:type" content="article">
-<meta property="og:title" content="初次学习c++代码，其中的">
+<meta property="og:title" content="c++相关关键字">
 <meta property="og:url" content="http://yoursite.com/2019/09/28/初次学习c-代码，其中的/index.html">
 <meta property="og:site_name" content="个人博客">
 <meta property="og:description" content="1.c++中的pointThe Point class represents a location in a two-dimensional (x, y) coordinate space.就是一个点坐标（X,Y）">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-28T15:48:09.978Z">
+<meta property="og:updated_time" content="2019-10-16T14:52:30.953Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="初次学习c++代码，其中的">
+<meta name="twitter:title" content="c++相关关键字">
 <meta name="twitter:description" content="1.c++中的pointThe Point class represents a location in a two-dimensional (x, y) coordinate space.就是一个点坐标（X,Y）">
   
     <link rel="alternative" href="/atom.xml" title="个人博客" type="application/atom+xml">
@@ -172,7 +172,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      初次学习c++代码，其中的
+      c++相关关键字
     </h1>
   
 
@@ -188,8 +188,30 @@
         <h1 id="1-c-中的point"><a href="#1-c-中的point" class="headerlink" title="1.c++中的point"></a>1.c++中的point</h1><p>The Point class represents a location in a two-dimensional (x, y) coordinate space.<br>就是一个点坐标（X,Y）</p>
 <a id="more"></a>
 <h1 id="2-c-中的unsigned"><a href="#2-c-中的unsigned" class="headerlink" title="2.c++中的unsigned"></a>2.c++中的unsigned</h1><p>在c++中，vector是一个十分有用的容器。<br>作用：它能够像容器一样存放各种类型的对象，简单地说，vector是一个能够存放任意类型的动态数组，能够增加和压缩数据。<br>vector在C++标准模板库中的部分内容，它是一个多功能的，能够操作多种数据结构和算法的模板类和函数库。<br>特别注意：<br>使用vector需要注意以下几点：<br>1、如果你要表示的向量长度较长（需要为向量内部保存很多数），容易导致内存泄漏，而且效率会很低；<br>2、Vector作为函数的参数或者返回值时，需要注意它的写法：<br>   double Distance(vector<int>&amp;a, vector<int>&amp;b) 其中的“&amp;”绝对不能少！！</int></int></p>
-<h1 id="3-c-中vector的使用"><a href="#3-c-中vector的使用" class="headerlink" title="3. c++中vector的使用"></a>3. c++中vector的使用</h1><p>无符号数，作用为存储的数据范围大<br>　　unsigned char是无符号字节型，char类型变量的大小通常为1个字节（1字节=8个位），且属于整型。整型的每一种都有无符号（unsigned）和有符号（signed）两种类型（float和double总是带符号的），在默认情况下声明的整型变量都是有符号的类型（char有点特别），如果需声明无符号类型的话就需要在类型前加上unsigned。无符号版本和有符号版本的区别就是无符号类型能保存2倍于有符号类型的数据，比如16位系统中一个int能存储的数据的范围为-32768<del>32767，而unsigned能存储的数据范围则是0</del>65535。</p>
-
+<h1 id="3-c-中vector的使用"><a href="#3-c-中vector的使用" class="headerlink" title="3. c++中vector的使用"></a>3. c++中vector的使用</h1><p>无符号数，作用为存储的数据范围大<br>　　unsigned char是无符号字节型，char类型变量的大小通常为1个字节（1字节=8个位），且属于整型。整型的每一种都有无符号（unsigned）和有符号（signed）两种类型（float和double总是带符号的），在默认情况下声明的整型变量都是有符号的类型（char有点特别），如果需声明无符号类型的话就需要在类型前加上unsigned。无符号版本和有符号版本的区别就是无符号类型能保存2倍于有符号类型的数据，比如16位系统中一个int能存储的数据的范围为-32768-32767，而unsigned能存储的数据范围则是0~65535。</p>
+<h1 id="4-keybd-event"><a href="#4-keybd-event" class="headerlink" title="4.keybd_event"></a>4.keybd_event</h1><p>keybd_event函数说明</p>
+<h2 id="4-1-函数原型"><a href="#4-1-函数原型" class="headerlink" title="4.1.函数原型"></a>4.1.函数原型</h2><p>VOID keybd_event(BYTE bVk, BYTE bScan, DWORD dwFlags, DWORD dwExtralnfo);</p>
+<h2 id="4-2-参数说明"><a href="#4-2-参数说明" class="headerlink" title="4.2.参数说明"></a>4.2.参数说明</h2><p>bVk：定义一个虚拟键码。键码值必须在1～254之间。<br>bScan ： 定义该键的硬件扫描码。一般置0即可。<br>dwFlags ： 定义函数操作的各个方面的一个标志位集。应用程序可使用如下一些预定义常数的组合设置标志位。<br>KEYEVENTF_EXTENDEDKEY：若指定该值，则扫描码前一个值为OXEO（224）的前缀字节。<br>KEYEVENTF_KEYUP：若指定该值，该键将被释放；若未指定该值，该键将被按下。<br>dwExtralnfo：定义与击键相关的附加的32位值。一般置0即可。</p>
+<h1 id="5-assign"><a href="#5-assign" class="headerlink" title="5.assign()"></a>5.assign()</h1><p>C++ string c()赋值常用方法<br>函数assign()常用在给string类变量赋值.<br>常用方法有:</p>
+<h2 id="5-1-直接用另一个字符串赋值"><a href="#5-1-直接用另一个字符串赋值" class="headerlink" title="5.1,直接用另一个字符串赋值."></a>5.1,直接用另一个字符串赋值.</h2><p>如str2.assign(str1);即用str1给str2赋值.</p>
+<h2 id="5-2-用另一个字符串的一个子串赋值"><a href="#5-2-用另一个字符串的一个子串赋值" class="headerlink" title="5.2,用另一个字符串的一个子串赋值"></a>5.2,用另一个字符串的一个子串赋值</h2><p>如str3.assign(str1, 2, 3);</p>
+<h2 id="5-3-用一个字符串的前一段子串赋值"><a href="#5-3-用一个字符串的前一段子串赋值" class="headerlink" title="5.3,用一个字符串的前一段子串赋值;"></a>5.3,用一个字符串的前一段子串赋值;</h2><p>如str4.assign(“World”, 5);</p>
+<h2 id="5-4-用几个相同的字符-赋值"><a href="#5-4-用几个相同的字符-赋值" class="headerlink" title="5.4,用几个相同的字符,赋值."></a>5.4,用几个相同的字符,赋值.</h2><p>如str5.assign(10, ‘c’);</p>
+<h1 id="6-finddata-t-结构体用法-及相关函数用法"><a href="#6-finddata-t-结构体用法-及相关函数用法" class="headerlink" title="6 _finddata_t 结构体用法 及相关函数用法"></a>6 _finddata_t 结构体用法 及相关函数用法</h1><p><a href="https://blog.csdn.net/wangqingchuan92/article/details/77979669" target="_blank" rel="noopener">可参考</a><br>_finddata_t是用来存储文件各种信息的结构体，使用这个结构体要引用的头文件为“ #include &lt;io.h&gt;”它的结构体定义如下：<br>struct _finddata_t<br>        {<br>             unsigned attrib;<br>             time_t time_create;<br>             time_t time_access;<br>             time_t time_write;<br>             _fsize_t size;<br>             char name[_MAX_FNAME];<br>        };<br>在 VS 2013中如下定义：<br>#define _finddata_t     _finddata64i32_t<br>struct _finddata64i32_t {<br>        unsigned    attrib;<br>        __time64_t  time_create;    /* -1 for FAT file systems <em>/<br>        __time64_t  time_access;    /</em> -1 for FAT file systems */<br>        __time64_t  time_write;<br>        _fsize_t    size;<br>        char        name[260];<br>};<br>unsigned atrrib：文件属性的存储位置。它存储一个unsigned单元，用于表示文件的属性。文件属性是用位表示的，主要有以下一些：<em>A</em>ARCH（存档）、 <em>A</em>HIDDEN（隐藏）、<em>A</em>NORMAL（正常）、<em>A</em>RDONLY（只读）、<em>A</em>SUBDIR（文件夹）、<em>A</em>SYSTEM（系统）。这些都是在中定义的宏，可以直接使用，而本身的意义其实是一个无符号整型（只不过这个整型应该是2的几次幂，从而保证只有一位为 1，而其他位为0）。既然是位表示，那么当一个文件有多个属性时，它往往是通过位或的方式，来得到几个属性的综合。例如只读+隐藏+系统属性，应该为：<em>A</em>HIDDEN | <em>A</em>RDONLY | <em>A</em>SYSTEM 。</p>
+<p>#define <em>A</em>NORMAL       0x00    /* Normal file - No read/write restrictions <em>/<br>#define <em>A</em>RDONLY       0x01    /</em> Read only file <em>/<br>#define <em>A</em>HIDDEN       0x02    /</em> Hidden file <em>/<br>#define <em>A</em>SYSTEM       0x04    /</em> System file <em>/<br>#define <em>A</em>SUBDIR       0x10    /</em> Subdirectory <em>/<br>#define <em>A</em>ARCH         0x20    /</em> Archive file <em>/<br>time_t time_create：这里的time_t是一个变量类型，实际上就是长整形变量 long int，用来保存从1970年1月1日0时0分0秒到现在时刻的秒数<br>time_t time_access：文件最后一次被访问的时间。<br>time_t time_write：文件最后一次被修改的时间。<br>_fsize_t size：文件的大小（字节数表示）。<br>char name[_MAX_FNAME]：文件的文件名。这里的_MAX_FNAME是一个常量宏，它在头文件中被定义，表示的是文件名的最大长度。<br>使用方法：<br>    需要搭配 _findfirst（）、_findnext（）和_fineclose（）三个函数使用，下面介绍这三个函数：<br>long _findfirst( char *filespec, struct _finddata_t *fileinfo )；<br>        返回值：如果查找成功的话，将返回一个long型的唯一的查找用的句柄。这个句柄将会在_findnext函数中被使用。失败返回0.<br>        参数：<br>        filespec：标明文件的字符串，可支持通配符。比如：</em>.c，则表示当前文件夹下的所有后缀为C的文件。<br>        fileinfo ：这里就是用来存放文件信息的结构体的指针。这个结构体必须在调用此函数前声明，不过不用初始化，只要分配了内存空间就可以了。函数成功后，函数会把找到的文件的信息放入这个结构体所分配的内存空间中。<br>int _findnext( long handle, struct _finddata_t *fileinfo );<br>        返回值：若成功返回0，否则返回-1。<br>        参数：<br>         handle：即由_findfirst函数返回回来的句柄。<br>         fileinfo：文件信息结构体的指针。找到文件后，函数将该文件信息放入此结构体中。<br>int _findclose( long handle );<br>         返回值：成功返回0，失败返回-1。<br>         参数：<br>          handle ：_findfirst函数返回回来的句柄。<br>该结构体和搭配的函数使用的逻辑就是先用_findfirst查找第一个文件，若成功则用返回的句柄，调用_findnext函数查找其他的文件，当查找完毕后用，用_findclose函数结束查找。</p>
+<h1 id="7-c-str-函数"><a href="#7-c-str-函数" class="headerlink" title="7.c.str()函数"></a>7.c.str()函数</h1><p>语法: const char *c_str();<br>c_str()函数返回一个指向正规C字符串的指针, 内容与本string串相同.<br>这是为了与c语言兼容，在c语言中没有string类型，故必须通过string类对象的成员函数c_str()把string 对象转换成c中的字符串样式。<br>注意：一定要使用strcpy()函数 等来操作方法c_str()返回的指针。<br>比如：最好不要这样:<br>1 char* c;<br>2 string s=”1234”;<br>3 c = s.c_str();<br>c最后指向的内容是垃圾，因为s对象被析构，其内容被处理，同时，编译器也将报错——将一个const char *赋与一个char *。<br>应该这样用：<br>1 char c[20];<br>2 string s=”1234”;<br>3 strcpy(c,s.c_str());</p>
+<h1 id="8-strcmp"><a href="#8-strcmp" class="headerlink" title="8.strcmp"></a>8.strcmp</h1><p>函数名: strcmp<br>功能: 串比较<br>用法: int strcmp(char *str1, char *str2);<br>看Asic码，str1&gt;str2，返回值 &gt; 0；两串相等，返回0</p>
+<h1 id="9-LodePNG"><a href="#9-LodePNG" class="headerlink" title="9.LodePNG"></a>9.LodePNG</h1><p>LodePNG是一个集合了PNG图像解码器和编码器的代码文件，不依赖于诸如zlib和libpng的外部链接/库，提供方便友好的PNG编解码器调用方法。LodePNG主要是采用C（ISO C90）编写的，并提供了C++的接口。LodePNG的使用非常简单，只要在项目文件中包含lodepng.cpp和lodepng.h或者lodepng.c和lodepng.h就可以。<br>参考<a href="https://blog.csdn.net/zerokkqq/article/details/52955866" target="_blank" rel="noopener">LodePNG入门</a></p>
+<h1 id="10-BITMAPFILEHEADER、BITMAPINFOHEADER及BMP结构"><a href="#10-BITMAPFILEHEADER、BITMAPINFOHEADER及BMP结构" class="headerlink" title="10.BITMAPFILEHEADER、BITMAPINFOHEADER及BMP结构"></a>10.<a href="https://www.cnblogs.com/lzlsky/archive/2012/08/16/2641698.html" target="_blank" rel="noopener">BITMAPFILEHEADER、BITMAPINFOHEADER及BMP结构</a></h1><p>位图BITMAPINFOHEADER 与BITMAPFILEHEADER：<br>先来看BITMAPINFOHEADER，只写几个主要的<br>    biSize包含的是这个结构体的大小（包括颜色表）<br>    biWidth和biHeight分别是图片的长宽<br>    biPlanes是目标绘图设备包含的层数，必须设置为1<br>    biBitCount是图像的位数，例如24位，8位等<br>    biXPelsPerMeter， biYPelsPerMeter 是现实世界中每米包含的像素数 设为3780即可<br>    biSizeImage 图像数据的大小 = biWidth X biHeight X biBitCount<br>    ———————————————————————————<br>    再看 BITMAPFILEHEADER<br>    bfType  图片的类型 必须是BM 填0x4d42即十进制的19778<br>    bfOffBits 从文件头开始到颜色数据的偏移量  54+sizeof(RGBQUAD)<em>256<br>    bfSize  图片的大小，bfOffBits + 长 X 宽 X 位数  例如对于128X128X24位的图像  bfSize=128X128X24 + 54+sizeof(RGBQUAD)</em>256<br>    bfReserved1和bfReserved1必须为0<br>BMP文件结构及其存取<br>        数字图像在外存储器设备中的存储形式是图像文件，图像必须按照某个已知的、公认的数据存储顺序和结构进行存储，才能使不同的程序对图像文件顺利进行打开或存盘操作，实现数据共享。图像数据在文件中的存储顺序和结构称为图像文件格式。目前广为流传的图像文件格式有许多种，常见的格式包括BMP、 GIF、JPEG、TIFF、PSD、DICOM、MPEG等。在各种图像文件格式中，一部分是由某个软硬件厂商提出并被广泛接受和采用的格式，例如 BMP、GIF和PSD格式；另一部分是由各种国际标准组织提出的格式，例如JPEG、TIFF和DICOM，其中JPEG是国际静止图像压缩标准组织提出的格式，TIFF是由部分厂商组织提出的格式，DICOM是医学图像国际标准组织提出的医学图像专用格式。<br>        BMP文件是Windows操作系统所推荐和支持的图像文件格式，是一种将内存或显示器的图像数据不经过压缩而直接按位存盘的文件格式，所以称为位图（bitmap）文件，因其文件扩展名为BMP，故称为BMP文件格式，简称BMP文件。</p>
+<h1 id="11-setw-函数"><a href="#11-setw-函数" class="headerlink" title="11.setw()函数"></a>11.setw()函数</h1><p>源文件: “iomanip”<br>作用: setw(int n)用来控制输出间隔。<br>若输入的内容超过setw()设置的长度，则按实际长度输出。<br>setw()默认填充的内容为空格，可以setfill()配合使用设置其他字符填充。<br>如<br>cout&lt;&lt;setfill(‘<em>‘)&lt;&lt;setw(5)&lt;&lt;’a’&lt;&lt;endl;<br>则输出：<br>***</em>a //4个*和字符a共占5个位置。</p>
+<h2 id="12-图像预处理-二化值"><a href="#12-图像预处理-二化值" class="headerlink" title="12.图像预处理(二化值)"></a>12.图像预处理(二化值)</h2><h3 id="1-图像获取与灰度化"><a href="#1-图像获取与灰度化" class="headerlink" title="1. 图像获取与灰度化"></a>1. 图像获取与灰度化</h3><pre><code>彩色图像主要分为两种，RGB和CMYK。CMYK类型的图像有四个颜色组成，分          别是青(C)、品(M)、黄(Y)、黑(K)
+每一个图像的像素对于二维空间中一个特定的位置，并且有一个或者多个与那个点相关的采样值组成数值。灰度图像也称为灰阶图像,图像中每个像素可以由0(黑)到255(白)的亮度值(Intensity)表示。0-255之间表示不同的灰度级。
+将彩色图像转化成为灰度图像的过程称为图像的灰度化处理。灰度化，在RGB模型中，如果R=G=B时，则彩色表示一种灰度颜色，其中R=G=B的值叫灰度值，因此，灰度图像每个像素只需一个字节存放灰度值（又称强度值、亮度值），灰度范围为0-255。彩色图像中的每个像素的颜色有R、G、B三个分量决定，而每个分量有255个值可取，这样一个像素点可以有1600多万（255255255）的颜色的变化范围。而灰度图像一个像素点的变化范围为255种。</code></pre><h3 id="2-二值化"><a href="#2-二值化" class="headerlink" title="2.二值化"></a>2.二值化</h3><pre><code>通过以上对彩色图片进行灰度化以后，把获取到的灰度图像进行二值化处理。对于二值化，其目的是将目标用户背景分类，为后续车道的识别做准备。灰度图像二值化最常用的方法是阈值法，他利用图像中目标与背景的差异，把图像分别设置为两个不同的级别，选取一个合适的阈值，以确定某像素是目标还是背景，从而获得二值化的图像。</code></pre><h2 id="13-fstream"><a href="#13-fstream" class="headerlink" title="13.fstream"></a>13.fstream</h2><p>在fstream类中，有一个成员函数open()，就是用来打开文件的，其原型是：<br>void open(const char* filename,int mode,int access);参数：<br>filename：　　要打开的文件名<br>mode：　　　　要打开文件的方式<br>access：　　　打开文件的属性<br>打开文件的方式在类ios(是所有流式I/O类的基类)中定义，常用的值如下：<br>ios::app：　　　以追加的方式打开文件<br>ios::ate：　　　文件打开后定位到文件尾，ios:app就包含有此属性<br>ios::binary：　以二进制方式打开文件，缺省的方式是文本方式。两种方式的区别见前文<br>ios::in：　　　 文件以输入方式打开(文件数据输入到内存)<br>ios::out：　　　文件以输出方式打开(内存数据输出到文件)<br>ios::nocreate： 不建立文件，所以文件不存在时打开失败<br>ios::noreplace：不覆盖文件，所以打开文件时如果文件存在失败<br>ios::trunc：　　如果文件存在，把文件长度设为0 可以用“或”把以上属性连接起来，如ios::out|ios::binary </p>
+<h1 id="14-memset"><a href="#14-memset" class="headerlink" title="14.memset"></a>14.memset</h1><h2 id="函数原型"><a href="#函数原型" class="headerlink" title="函数原型:"></a>函数原型:</h2><p>void* <em>_cdecl memset(<br>    _Out_writes_bytes_all</em>(<em>Size) void*  _Dst,<br>    _In</em>                          int    <em>Val,<br>    _In</em>                          size_t _Size<br>    );<br> _Dst：为指针或是数组<br>_Val：是赋给buffer的值<br>size_t _Size：赋值buffer中的位数</p>
+<h1 id="15-sizeof"><a href="#15-sizeof" class="headerlink" title="15.sizeof"></a>15.sizeof</h1><h2 id="15-1-定义"><a href="#15-1-定义" class="headerlink" title="15.1 定义"></a>15.1 定义</h2><p>sizeof是一个操作符（operator）。<br>其作用是返回一个对象或类型所占的内存字节数。</p>
+<h1 id="16-queue"><a href="#16-queue" class="headerlink" title="16.queue"></a>16.queue</h1><h1 id="16-1-概述"><a href="#16-1-概述" class="headerlink" title="16.1 概述"></a>16.1 概述</h1><p>deque（双端队列）是由一段一段的定量连续空间构成，可以向两端发展，因此不论在尾部或头部安插元素都十分迅速。 在中间部分安插元素则比较费时，因为必须移动其它元素</p>
+<h2 id="16-2-定义及初始化"><a href="#16-2-定义及初始化" class="headerlink" title="16.2 定义及初始化"></a>16.2 定义及初始化</h2><p>使用之前必须加相应容器的头文件：<br>/#include <deque> // deque属于std命名域的，因此需要通过命名限定，例如using std::deque;<br>定义的实现代码如下：<br>deque<int> a; // 定义一个int类型的双端队列a<br>deque<int> a(10); // 定义一个int类型的双端队列a，并设置初始大小为10<br>deque<int> a(10, 1); // 定义一个int类型的双端队列a，并设置初始大小为10且初始值都为1<br>deque<int> b(a); // 定义并用双端队列a初始化双端队列b<br>deque<int> b(a.begin(), a.begin()+3); // 将双端队列a中从第0个到第2个(共3个)作为双端队列b的初始值<br>除此之外，还可以直接使用数组来初始化向量：<br>int n[] = { 1, 2, 3, 4, 5 };<br>// 将数组n的前5个元素作为双端队列a的初值<br>// 说明：当然不包括arr[4]元素，末尾指针都是指结束元素的下一个元素，<br>// 这个主要是为了和deque.end()指针统一。<br>deque<int> a(n, n + 5);<br>deque<int> a(&amp;n[1], &amp;n[4]); // 将n[1]、n[2]、n[3]作为双端队列a的初值</int></int></int></int></int></int></int></deque></p>
+<h2 id="其他请参考-点我"><a href="#其他请参考-点我" class="headerlink" title="其他请参考 点我"></a>其他请参考 <a href="https://www.cnblogs.com/linuxAndMcu/p/10260124.html" target="_blank" rel="noopener">点我</a></h2>
       
 
       
@@ -297,6 +319,15 @@
   
 <nav id="article-nav">
   
+    <a href="/2019/10/05/python/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          python
+        
+      </div>
+    </a>
+  
   
     <a href="/2019/09/28/关于图片不显示问题/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">关于图片不显示问题</div>
@@ -326,7 +357,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-c-中的point"><span class="toc-number">1.</span> <span class="toc-text">1.c++中的point</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-c-中的unsigned"><span class="toc-number">2.</span> <span class="toc-text">2.c++中的unsigned</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-c-中vector的使用"><span class="toc-number">3.</span> <span class="toc-text">3. c++中vector的使用</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-c-中的point"><span class="toc-number">1.</span> <span class="toc-text">1.c++中的point</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-c-中的unsigned"><span class="toc-number">2.</span> <span class="toc-text">2.c++中的unsigned</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-c-中vector的使用"><span class="toc-number">3.</span> <span class="toc-text">3. c++中vector的使用</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-keybd-event"><span class="toc-number">4.</span> <span class="toc-text">4.keybd_event</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#4-1-函数原型"><span class="toc-number">4.1.</span> <span class="toc-text">4.1.函数原型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-2-参数说明"><span class="toc-number">4.2.</span> <span class="toc-text">4.2.参数说明</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#5-assign"><span class="toc-number">5.</span> <span class="toc-text">5.assign()</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#5-1-直接用另一个字符串赋值"><span class="toc-number">5.1.</span> <span class="toc-text">5.1,直接用另一个字符串赋值.</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-2-用另一个字符串的一个子串赋值"><span class="toc-number">5.2.</span> <span class="toc-text">5.2,用另一个字符串的一个子串赋值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-3-用一个字符串的前一段子串赋值"><span class="toc-number">5.3.</span> <span class="toc-text">5.3,用一个字符串的前一段子串赋值;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-4-用几个相同的字符-赋值"><span class="toc-number">5.4.</span> <span class="toc-text">5.4,用几个相同的字符,赋值.</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#6-finddata-t-结构体用法-及相关函数用法"><span class="toc-number">6.</span> <span class="toc-text">6 _finddata_t 结构体用法 及相关函数用法</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#7-c-str-函数"><span class="toc-number">7.</span> <span class="toc-text">7.c.str()函数</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#8-strcmp"><span class="toc-number">8.</span> <span class="toc-text">8.strcmp</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#9-LodePNG"><span class="toc-number">9.</span> <span class="toc-text">9.LodePNG</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#10-BITMAPFILEHEADER、BITMAPINFOHEADER及BMP结构"><span class="toc-number">10.</span> <span class="toc-text">10.BITMAPFILEHEADER、BITMAPINFOHEADER及BMP结构</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#11-setw-函数"><span class="toc-number">11.</span> <span class="toc-text">11.setw()函数</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#12-图像预处理-二化值"><span class="toc-number">11.1.</span> <span class="toc-text">12.图像预处理(二化值)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-图像获取与灰度化"><span class="toc-number">11.1.1.</span> <span class="toc-text">1. 图像获取与灰度化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-二值化"><span class="toc-number">11.1.2.</span> <span class="toc-text">2.二值化</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#13-fstream"><span class="toc-number">11.2.</span> <span class="toc-text">13.fstream</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#14-memset"><span class="toc-number">12.</span> <span class="toc-text">14.memset</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#函数原型"><span class="toc-number">12.1.</span> <span class="toc-text">函数原型:</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#15-sizeof"><span class="toc-number">13.</span> <span class="toc-text">15.sizeof</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#15-1-定义"><span class="toc-number">13.1.</span> <span class="toc-text">15.1 定义</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#16-queue"><span class="toc-number">14.</span> <span class="toc-text">16.queue</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#16-1-概述"><span class="toc-number">15.</span> <span class="toc-text">16.1 概述</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#16-2-定义及初始化"><span class="toc-number">15.1.</span> <span class="toc-text">16.2 定义及初始化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#其他请参考-点我"><span class="toc-number">15.2.</span> <span class="toc-text">其他请参考 点我</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -355,7 +386,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2019-09-29 Wang Jun
+    		&copy; 2019-10-18 Wang Jun
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -453,11 +484,31 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">语法</a>
+                <a href="javascript:void(0)" class="js-tag color5">视频笔记</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">python</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">知识点</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">pynlpir包</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">LicenseError</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">英语笔记</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">语法</a>
               </li>
             
             <div class="clearfix"></div>
