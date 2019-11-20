@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>c++视频笔记 | 个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="第3章 函数2.嵌套与递归嵌套 在一个函数中，可能要调用另一个函数，被调用的函数又去调用别的函数。 不会出错，用栈保存了当前现场和返回地址。递归函数直接或间接调用自己。计算n的阶乘unsigned fac(unsigned n){    unsigned f;    if(n == 0)        f = 1;    else        f = fac(n-1) * n;    retur">
+  <meta name="description" content="第3章 函数2.嵌套与递归嵌套 在一个函数中，可能要调用另一个函数，被调用的函数又去调用别的函数。 不会出错，用栈保存了当前现场和返回地址。递归">
 <meta name="keywords" content="c++,视频笔记">
 <meta property="og:type" content="article">
 <meta property="og:title" content="c++视频笔记">
 <meta property="og:url" content="http://yoursite.com/2019/10/06/c-笔记/index.html">
 <meta property="og:site_name" content="个人博客">
-<meta property="og:description" content="第3章 函数2.嵌套与递归嵌套 在一个函数中，可能要调用另一个函数，被调用的函数又去调用别的函数。 不会出错，用栈保存了当前现场和返回地址。递归函数直接或间接调用自己。计算n的阶乘unsigned fac(unsigned n){    unsigned f;    if(n == 0)        f = 1;    else        f = fac(n-1) * n;    retur">
+<meta property="og:description" content="第3章 函数2.嵌套与递归嵌套 在一个函数中，可能要调用另一个函数，被调用的函数又去调用别的函数。 不会出错，用栈保存了当前现场和返回地址。递归">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-11-12T08:29:01.050Z">
+<meta property="og:updated_time" content="2019-11-19T13:15:31.248Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="c++视频笔记">
-<meta name="twitter:description" content="第3章 函数2.嵌套与递归嵌套 在一个函数中，可能要调用另一个函数，被调用的函数又去调用别的函数。 不会出错，用栈保存了当前现场和返回地址。递归函数直接或间接调用自己。计算n的阶乘unsigned fac(unsigned n){    unsigned f;    if(n == 0)        f = 1;    else        f = fac(n-1) * n;    retur">
+<meta name="twitter:description" content="第3章 函数2.嵌套与递归嵌套 在一个函数中，可能要调用另一个函数，被调用的函数又去调用别的函数。 不会出错，用栈保存了当前现场和返回地址。递归">
   
     <link rel="alternative" href="/atom.xml" title="个人博客" type="application/atom+xml">
   
@@ -186,7 +186,8 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="第3章-函数"><a href="#第3章-函数" class="headerlink" title="第3章 函数"></a>第3章 函数</h1><h2 id="2-嵌套与递归"><a href="#2-嵌套与递归" class="headerlink" title="2.嵌套与递归"></a>2.嵌套与递归</h2><h3 id="嵌套"><a href="#嵌套" class="headerlink" title="嵌套"></a>嵌套</h3><pre><code> 在一个函数中，可能要调用另一个函数，被调用的函数又去调用别的函数。
-不会出错，用栈保存了当前现场和返回地址。</code></pre><h3 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h3><pre><code>函数直接或间接调用自己。</code></pre><p>计算n的阶乘<br>unsigned fac(unsigned n){<br>    unsigned f;<br>    if(n == 0)<br>        f = 1;<br>    else<br>        f = fac(n-1) * n;<br>    return f;<br>}<br>例题:重n个人里选k个人<br>公式:</p>
+不会出错，用栈保存了当前现场和返回地址。</code></pre><h3 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h3><a id="more"></a>
+<pre><code>函数直接或间接调用自己。</code></pre><p>计算n的阶乘<br>unsigned fac(unsigned n){<br>    unsigned f;<br>    if(n == 0)<br>        f = 1;<br>    else<br>        f = fac(n-1) * n;<br>    return f;<br>}<br>例题:重n个人里选k个人<br>公式:</p>
 <h2 id="3-引用类型"><a href="#3-引用类型" class="headerlink" title="3.引用类型"></a>3.引用类型</h2><p>应用(&amp;)是标识符的别名<br>定义一个引用时，必须同时对它进行初始化，使它指向同一个已存在的对象<br>例如:<br>    int i,j;<br>    int &amp;ri = i;  //定义int引用ri，并初始化为变量i的引用<br>    j = 10;<br>    ri = j; //相等于 i = j</p>
 <h2 id="4-含有可变参的函数"><a href="#4-含有可变参的函数" class="headerlink" title="4.含有可变参的函数"></a>4.含有可变参的函数</h2><h2 id="5-内联函数"><a href="#5-内联函数" class="headerlink" title="5.内联函数"></a>5.内联函数</h2><p>调用提高效率<br>声明时使用关键字 inline。<br> 编译时在调用处用函数体进行替换，节省了参数传递、控制转移等开销。<br> 注意：  内联函数体内不能有循环语句和switch语句； </p>
 <h2 id="6-constexpr函数"><a href="#6-constexpr函数" class="headerlink" title="6.constexpr函数"></a>6.constexpr函数</h2><h2 id="7-带默认参数值的函数"><a href="#7-带默认参数值的函数" class="headerlink" title="7.带默认参数值的函数"></a>7.带默认参数值的函数</h2><h2 id="8-函数重载"><a href="#8-函数重载" class="headerlink" title="8.函数重载"></a>8.函数重载</h2><h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><pre><code>C++允许功能相近的函数在相同的作用域内以相同函数名声明，从而形成重载。方便 使用，便于记忆</code></pre><h3 id="例"><a href="#例" class="headerlink" title="例"></a>例</h3><pre><code>形参类型不同
@@ -480,7 +481,7 @@ enum class Category { General=1, Pistol, MachineGun, Cannon};</code></pre><h4 id
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2019-11-19 Wang Jun
+    		&copy; 2019-11-20 Wang Jun
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -582,6 +583,26 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Python</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Anaconda</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Spark</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Hadoop</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">python</a>
               </li>
              
@@ -598,7 +619,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Java</a>
+                <a href="javascript:void(0)" class="js-tag color3">-Haddop</a>
               </li>
              
               <li class="article-tag-list-item">
