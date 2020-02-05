@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>python | 个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="DataFrame(3) 更改显示index方法:用reindex()方法更改显示index的含义：并不是指重新给出新index，而是调整index顺序 和密度估计kernel density estimation是在概率论中用来估计未知的密度函数，属于非参数检验方法之一 np.random.randn(d0,d1,d2……dn)1)当函数括号内没有参数时，则返回一个浮点数；2）当函数括号内有一个">
+  <meta name="description" content="DataFrame(3) 更改显示index方法:用reindex()方法更改显示index的含义：并不是指重新给出新index，而是调整index顺序">
 <meta name="keywords" content="python,知识点">
 <meta property="og:type" content="article">
 <meta property="og:title" content="python">
 <meta property="og:url" content="http://yoursite.com/2019/10/05/python/index.html">
 <meta property="og:site_name" content="个人博客">
-<meta property="og:description" content="DataFrame(3) 更改显示index方法:用reindex()方法更改显示index的含义：并不是指重新给出新index，而是调整index顺序 和密度估计kernel density estimation是在概率论中用来估计未知的密度函数，属于非参数检验方法之一 np.random.randn(d0,d1,d2……dn)1)当函数括号内没有参数时，则返回一个浮点数；2）当函数括号内有一个">
+<meta property="og:description" content="DataFrame(3) 更改显示index方法:用reindex()方法更改显示index的含义：并不是指重新给出新index，而是调整index顺序">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-10-15T14:18:34.112Z">
+<meta property="og:updated_time" content="2020-02-05T19:02:38.591Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python">
-<meta name="twitter:description" content="DataFrame(3) 更改显示index方法:用reindex()方法更改显示index的含义：并不是指重新给出新index，而是调整index顺序 和密度估计kernel density estimation是在概率论中用来估计未知的密度函数，属于非参数检验方法之一 np.random.randn(d0,d1,d2……dn)1)当函数括号内没有参数时，则返回一个浮点数；2）当函数括号内有一个">
+<meta name="twitter:description" content="DataFrame(3) 更改显示index方法:用reindex()方法更改显示index的含义：并不是指重新给出新index，而是调整index顺序">
   
     <link rel="alternative" href="/atom.xml" title="个人博客" type="application/atom+xml">
   
@@ -186,6 +186,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="DataFrame"><a href="#DataFrame" class="headerlink" title="DataFrame"></a>DataFrame</h2><p>(3) 更改显示index方法:用reindex()方法<br><code>更改显示index的含义：并不是指重新给出新index，而是调整index顺序</code></p>
+<a id="more"></a>
 <h1 id="和密度估计"><a href="#和密度估计" class="headerlink" title="和密度估计"></a>和密度估计</h1><p>kernel density estimation是在概率论中用来估计未知的密度函数，属于非参数检验方法之一</p>
 <h1 id="np-random-randn-d0-d1-d2……dn"><a href="#np-random-randn-d0-d1-d2……dn" class="headerlink" title="np.random.randn(d0,d1,d2……dn)"></a>np.random.randn(d0,d1,d2……dn)</h1><p>1)当函数括号内没有参数时，则返回一个浮点数；<br>2）当函数括号内有一个参数时，则返回秩为1的数组，不能表示向量和矩阵；<br>3）当函数括号内有两个及以上参数时，则返回对应维度的数组，能表示向量或矩阵；<br>4）np.random.standard_normal（）函数与np.random.randn()类似，但是np.random.standard_normal（）的输入参数为元组（tuple）.<br>5)np.random.randn()的输入通常为整数，但是如果为浮点数，则会自动直接截断转换为整数。<br>在神经网络构建中，权重参数W通常采用该函数进行初始化，当然需要注意的是，通常会在生成的矩阵后面乘以小数，比如0.01，目的是为了提高梯度下降算法的收敛速度。<br>W = np.random.randn(2,2)*0.01</p>
 <h1 id="np-random-rand-函数"><a href="#np-random-rand-函数" class="headerlink" title="np.random.rand()函数"></a>np.random.rand()函数</h1><p>np.random.rand(d0,d1,d2……dn)<br>注：使用方法与np.random.randn()函数相同<br>作用：<br>通过本函数可以返回一个或一组服从“0~1”均匀分布的随机样本值。随机样本取值范围是[0,1)，不包括1。<br>应用：在深度学习的Dropout正则化方法中，可以用于生成dropout随机向量（dl），例如（keep_prob表示保留神经元的比例）：dl = np.random.rand(al.shape[0],al.shape[1]) &lt; keep_prob</p>
